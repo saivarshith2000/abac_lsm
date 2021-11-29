@@ -36,10 +36,7 @@ cd abac_lsm
 4. Patch the downloaded kernel with code from this repository
 ```bash
 # In the cloned repository directory
-cp -r abac ../linux-5.10.62/security/
-cp Makefile ../linux-5.10.62/security/
-cp Kconfig ../linux-5.10.62/security/
-
+cp -r security ../linux-5.10.62/
 ```
 
 5. Configure
