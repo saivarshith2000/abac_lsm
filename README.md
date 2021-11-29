@@ -49,13 +49,22 @@ cp -v /boot/config-$(uname -r) .config
 # To enable ABAC LSM
 make menuconfig
 ```
+Select Security Options
+![Select Security Options](images/s1.png "Select Security Options")
+
+Make sure that security file system and path-based security modules are enabled
+![Make sure that security file system and path-based security modules are enabled](images/s2.png "Make sure that security file system and path-based security modules are enabled")
+
+Make sure that ABAC module is selected
+![Make sure that ABAC module is selected](images/s3.png "Make sure that ABAC module is selected")
+
 
 6. Build
 ```bash
 # In kernel source directory
 make
 (or)
-make -j$(npro) # To use all the cores of your system for concurrency
+make -j$(nproc) # To use all the cores of your system for concurrency
 ```
 
 7. Install
