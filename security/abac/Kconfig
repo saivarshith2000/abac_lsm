@@ -1,0 +1,7 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config SECURITY_ABAC
+	bool "ABAC support"
+	depends on SECURITY
+	default y
+	help
+	  This enables the Attribute-Based Access Control (ABAC) Linux Security Module (LSM).
