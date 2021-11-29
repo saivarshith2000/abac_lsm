@@ -45,8 +45,12 @@ cp Kconfig ../linux-5.10.62/security/
 5. Configure
 ```
 # In kernel source directory
-cp -v /boot/config-$(uname -r) .config 	# your system's current configuration
-make menuconfig							# To enable ABAC LSM
+
+# your system's current configuration
+cp -v /boot/config-$(uname -r) .config
+
+# To enable ABAC LSM
+make menuconfig
 ```
 
 6. Build
