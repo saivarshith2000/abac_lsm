@@ -43,8 +43,8 @@ cp -r security ../linux-5.10.62/
 ```bash
 # In kernel source directory
 
-# your system's current configuration
-cp -v /boot/config-$(uname -r) .config
+# To generate initial config based on your system's architecture (x86_64 here)
+x86_64_defconfig
 
 # To enable ABAC LSM
 make menuconfig
