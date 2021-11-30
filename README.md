@@ -94,4 +94,7 @@ dmesg | grep ABAC
 
 # Check for ABAC securityFS directory
 ls /sys/kernel/security/abac/
+
+# Check for ABAC in the list of active LSMs
+cat /sys/kernel/security/lsm
 ```
