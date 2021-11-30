@@ -1,7 +1,7 @@
 # abac_lsm
-Attribute-based Access Control LSM
+Attribute-based Access Control Kernel Components
 
-This repository contains the source code and installation instructions for ABAC Linux Security Module.
+This repository contains the source code and installation instructions for ABAC Kernel Components.
 
 # Installation
 1. Install system dependencies for building the kernel
