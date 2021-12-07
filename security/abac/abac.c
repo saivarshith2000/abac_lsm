@@ -18,7 +18,7 @@
 static const char *secured_dir = "/home/secured/";
 
 // Check if path is secured
-char *is_secured(char *secured_path, char *accessed_path)
+bool is_secured(char *secured_path, char *accessed_path)
 {
 	if (strncmp(secured_path, accessed_path, strlen(secured_dir)) == 0) {
 		return true;
